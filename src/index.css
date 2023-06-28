@@ -2,11 +2,20 @@
   font-family: "Open Sans", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Robot Condensed", sans-serif !important;
+  font-weight: 700 !important;
+}
+
 /**
 * Specific styles
 */
 .custom-nav {
-  margin-bottom: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -34,4 +43,45 @@
 }
 .nav-item__link {
   color: black !important;
+}
+
+.custom-header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.posts {
+  padding-left: 0;
+}
+
+.post {
+  list-style: none;
+}
+.post + .post {
+  margin-top: 3rem;
+}
+.post__link {
+  color: black;
+}
+@media (min-width: 768px) {
+  .post__container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.post__image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .post__image {
+    width: 30%;
+    max-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+}
+.post__description {
+  color: rgba(0, 0, 0, 0.9);
 }
