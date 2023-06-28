@@ -1,5 +1,37 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/**
+* Specific styles
+*/
 .custom-nav {
   margin-bottom: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.nav-logo {
+  max-width: 12.5rem;
+  display: inline-block;
+}
+.nav-logo__image {
+  width: 100%;
+}
+
+#nav-collapsible-content {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-item {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+.nav-item__link {
+  color: black !important;
 }

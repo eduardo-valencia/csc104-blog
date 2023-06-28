@@ -1,6 +1,69 @@
+//
+// Utilities
+//
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+);
+
+// Allows you to get a breakpoint size by name.
+@function get-breakpoint($size) {
+  @return map-get($map: $breakpoints, $key: $size);
+}
+
+// Allows you to create a media query for a breakpoint size.
+@mixin breakpoint-up($size-name) {
+  $size: get-breakpoint($size-name);
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+//
+// Element styles
+//
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+* Specific styles
+*/
+
 .custom-nav {
   margin-bottom: 2rem;
   $padding-y: 1.5rem;
   padding-top: $padding-y;
   padding-bottom: $padding-y;
+}
+
+.nav-logo {
+  max-width: 12.5rem;
+  display: inline-block;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+#nav-collapsible-content {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  $margin-y: 1rem;
+  margin-top: $margin-y;
+
+  @include breakpoint-up('md') {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  &__link {
+    color: black !important;
+  }
 }

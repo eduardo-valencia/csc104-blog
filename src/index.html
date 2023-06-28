@@ -24,21 +24,25 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <nav class="custom-nav container navbar-expand-lg navbar navbar-light">
-      <img src="./logo.svg" alt="Supercoder" class="navbar-brand mr-auto" />
+    <nav class="custom-nav container navbar-expand-md navbar navbar-light">
+      <!-- Logo -->
+      <a href="/" class="nav-logo navbar-brand">
+        <img src="./logo.svg" alt="Supercoder" class="nav-logo__image" />
+      </a>
       <!-- Toggle button -->
       <button
         type="button"
         class="navbar-toggler"
         data-toggle="collapse"
-        data-target="#nav-collapsable-content"
-        aria-controls="nav-collapsable-content"
+        data-target="#nav-collapsible-content"
+        aria-controls="nav-collapsible-content"
         aria-expanded="false"
         aria-label="Open or close navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="nav-collapsable-content">
+      <!-- Nav items -->
+      <div class="collapse navbar-collapse" id="nav-collapsible-content">
         <ul class="custom-nav__links navbar-nav">
           <li class="nav-links__item nav-item">
             <a href="./blog" class="nav-item__link nav-link">Blog</a>
