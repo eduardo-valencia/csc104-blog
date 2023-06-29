@@ -122,3 +122,8 @@ h6 {
     font-size: 0.875rem;
   }
 }
+
+.footer {
+  padding: 1.625rem 0;
+  border-top: 0.0625rem solid #d8d8d8;
+}
