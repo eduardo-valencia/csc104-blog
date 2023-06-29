@@ -92,7 +92,7 @@ h6 {
 @media (min-width: 576px) {
   .post__container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .post__image {
@@ -101,8 +101,10 @@ h6 {
 }
 @media (min-width: 576px) {
   .post__image {
-    width: 30%;
-    height: auto;
+    width: 9.375rem;
+    height: 9.375rem;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-right: 2rem;
     margin-bottom: 0;
   }

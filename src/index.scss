@@ -131,7 +131,7 @@ h6 {
   &__container {
     @include breakpoint-up('sm') {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 
@@ -140,8 +140,10 @@ h6 {
     margin-bottom: 2rem;
 
     @include breakpoint-up('sm') {
-      width: 30%;
-      height: auto;
+      $size: 9.375rem;
+      width: $size;
+      height: $size;
+      object-fit: cover;
       margin-right: 2rem;
       margin-bottom: 0;
     }
