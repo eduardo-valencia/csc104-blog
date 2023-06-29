@@ -90,13 +90,34 @@ h6 {
 // Posts
 .posts {
   padding-left: 0;
+
+  @include breakpoint-up('lg') {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .post {
   list-style: none;
+  flex-basis: 48%;
+
+  @include breakpoint-up('lg') {
+    margin-bottom: 5rem;
+  }
 
   & + & {
     margin-top: 5rem;
+
+    @include breakpoint-up('lg') {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    @include breakpoint-up('lg') {
+      font-size: 1.125rem;
+    }
   }
 
   &__link {
@@ -121,12 +142,20 @@ h6 {
     @include breakpoint-up('sm') {
       width: 30%;
       height: auto;
-      margin-right: 1rem;
+      margin-right: 2rem;
       margin-bottom: 0;
+    }
+
+    @include breakpoint-up('lg') {
+      margin-right: 1rem;
     }
   }
 
   &__description {
     color: rgb(0, 0, 0, 0.9);
+
+    @include breakpoint-up('lg') {
+      font-size: 0.875rem;
+    }
   }
 }
