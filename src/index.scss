@@ -163,8 +163,7 @@ h6 {
     }
 
     @include breakpoint-up('md') {
-      width: 11.125rem;
-      height: 8rem;
+      @include image-size(1.14);
     }
 
     @include breakpoint-up('lg') {
