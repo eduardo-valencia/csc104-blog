@@ -52,12 +52,14 @@ h6 {
 
 .posts {
   padding-left: 0;
+  margin-bottom: 5rem;
 }
 @media (min-width: 992px) {
   .posts {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 }
 

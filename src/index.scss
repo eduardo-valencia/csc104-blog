@@ -90,11 +90,13 @@ h6 {
 // Posts
 .posts {
   padding-left: 0;
+  margin-bottom: 5rem;
 
   @include breakpoint-up('lg') {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 }
 
