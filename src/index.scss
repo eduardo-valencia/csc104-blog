@@ -115,6 +115,14 @@ h6 {
   }
 
   &__title {
+    @include breakpoint-up('sm') {
+      font-size: 1.125rem;
+    }
+
+    @include breakpoint-up('md') {
+      font-size: 1.5rem;
+    }
+
     @include breakpoint-up('lg') {
       font-size: 1.125rem;
     }
@@ -139,22 +147,43 @@ h6 {
     width: 100%;
     margin-bottom: 2rem;
 
+    @mixin image-size($amount-to-multiply-sm-size) {
+      $width-sm: 9.6875rem;
+      $height-sm: 8.75rem;
+      width: calc($width-sm * $amount-to-multiply-sm-size);
+      height: calc($height-sm * $amount-to-multiply-sm-size);
+    }
+
     @include breakpoint-up('sm') {
-      $size: 9.375rem;
-      width: $size;
-      height: $size;
-      object-fit: cover;
       margin-right: 2rem;
       margin-bottom: 0;
+      object-fit: cover;
+
+      @include image-size(1);
+    }
+
+    @include breakpoint-up('md') {
+      width: 11.125rem;
+      height: 8rem;
     }
 
     @include breakpoint-up('lg') {
       margin-right: 1rem;
+      @include image-size(1);
     }
   }
 
   &__description {
     color: rgb(0, 0, 0, 0.9);
+    margin-bottom: 0;
+
+    @include breakpoint-up('sm') {
+      font-size: 0.875rem;
+    }
+
+    @include breakpoint-up('md') {
+      font-size: 1rem;
+    }
 
     @include breakpoint-up('lg') {
       font-size: 0.875rem;
