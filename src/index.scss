@@ -33,13 +33,17 @@ $breakpoints: (
 //
 // Typography
 //
+%heading-font {
+  font-family: 'Robot Condensed', sans-serif !important;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Robot Condensed', sans-serif !important;
+  @extend %heading-font;
   font-weight: 700 !important;
 }
 
@@ -70,6 +74,7 @@ h6 {
 .nav-item {
   $margin-y: 1rem;
   margin-top: $margin-y;
+  @extend %heading-font;
 
   @include breakpoint-up('md') {
     margin-top: 0;
