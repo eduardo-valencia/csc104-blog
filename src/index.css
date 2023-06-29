@@ -21,7 +21,7 @@ h6 {
 }
 
 /**
-* Specific styles
+* All pages
 */
 .custom-nav {
   padding-top: 1.5rem;
@@ -53,6 +53,14 @@ h6 {
   color: black !important;
 }
 
+.footer {
+  padding: 1.625rem 0;
+  border-top: 0.0625rem solid #d8d8d8;
+}
+
+/**
+* Homepage
+*/
 .custom-header {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -162,7 +170,66 @@ h6 {
   }
 }
 
-.footer {
-  padding: 1.625rem 0;
-  border-top: 0.0625rem solid #d8d8d8;
+/**
+* Post page
+*/
+.post-header {
+  margin-top: 3.44rem;
+  margin-bottom: 3.06rem;
+}
+.post-header__title {
+  margin-bottom: 1.31rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  .post-header__title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .post-header__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .post-header__title {
+    font-size: 3rem;
+  }
+}
+.post-header__author {
+  margin-bottom: 2rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .post-header__author {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 992px) {
+  .post-header__author {
+    font-size: 1.2rem;
+  }
+}
+.post-header__image {
+  width: 100%;
+}
+
+.post-body {
+  margin-bottom: 3.87rem;
+}
+@media (min-width: 576px) {
+  .post-body {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 768px) {
+  .post-body {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .post-body {
+    font-size: 1.3rem;
+  }
 }

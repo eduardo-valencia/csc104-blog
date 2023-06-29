@@ -48,7 +48,7 @@ h6 {
 }
 
 /**
-* Specific styles
+* All pages
 */
 
 // Nav
@@ -85,6 +85,15 @@ h6 {
     color: black !important;
   }
 }
+
+.footer {
+  padding: 1.625rem 0;
+  border-top: 0.0625rem solid #d8d8d8;
+}
+
+/**
+* Homepage
+*/
 
 // Header
 .custom-header {
@@ -197,7 +206,61 @@ h6 {
   }
 }
 
-.footer {
-  padding: 1.625rem 0;
-  border-top: 0.0625rem solid #d8d8d8;
+/**
+* Post page
+*/
+.post-header {
+  margin-top: 3.44rem;
+  margin-bottom: 3.06rem;
+
+  &__title {
+    margin-bottom: 1.31rem;
+    font-size: 1.5rem;
+
+    @include breakpoint-up('sm') {
+      font-size: 2rem;
+    }
+
+    @include breakpoint-up('md') {
+      font-size: 2.5rem;
+    }
+
+    @include breakpoint-up('md') {
+      font-size: 3rem;
+    }
+  }
+
+  &__author {
+    margin-bottom: 2rem;
+    display: block;
+
+    @include breakpoint-up('md') {
+      font-size: 1.1rem;
+    }
+
+    @include breakpoint-up('lg') {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.post-body {
+  margin-bottom: 3.87rem;
+
+  @include breakpoint-up('sm') {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  @include breakpoint-up('md') {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint-up('lg') {
+    font-size: 1.3rem;
+  }
 }
