@@ -54,33 +54,43 @@
       </div>
     </nav>
     <div class="container">
-      <header class="post-header">
-        <h1 class="post-header__title">Article 1</h1>
-        <span class="post-header__author">By Eduardo Valencia</span>
-        <img class="post-header__image" src="./dummy-image.jpg" alt="Lion" />
+      <header class="custom-header">
+        <h1>Contact</h1>
       </header>
-      <div class="post-body">
-        <p>
-          React is a new framework designed to help developers code faster. It
-          features support for TypeScript and advanced concepts such as state,
-          providers, and more. React is a new framework designed to help
-          developers code faster. It features support for TypeScript and
-          advanced concepts such as state, providers, and more. React is a new
-          framework designed to help developers code faster. It features support
-          for TypeScript and advanced concepts such as state, providers, and
-          more.
-        </p>
-        <p>
-          React is a new framework designed to help developers code faster. It
-          features support for TypeScript and advanced concepts such as state,
-          providers, and more. React is a new framework designed to help
-          developers code faster. It features support for TypeScript and
-          advanced concepts such as state, providers, and more. React is a new
-          framework designed to help developers code faster. It features support
-          for TypeScript and advanced concepts such as state, providers, and
-          more.
-        </p>
-      </div>
+      <form class="contact-form">
+        <div class="form-group contact-field">
+          <label for="name" class="contact-field__label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="form-group contact-field">
+          <label for="email" class="contact-field__label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="eduardo@supercoder.dev"
+          />
+        </div>
+        <div class="form-group contact-field">
+          <label for="message" class="contact-field__label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            placeholder="What do you want us to know?"
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="contact-toolbar">
+          <button class="btn btn-primary contact-toolbar__button" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
     <div class="container">
       <footer class="footer">

@@ -264,3 +264,26 @@ h6 {
     font-size: 1.3rem;
   }
 }
+
+/**
+* Contact Page
+*/
+.contact-form {
+  margin-bottom: 4.87rem;
+}
+
+.contact-field {
+  & + & {
+    margin-top: 2rem;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+}
+
+.contact-toolbar {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
