@@ -1,7 +1,17 @@
+/**
+* If you are viewing the CSS file, please see index.scss because it generated
+* the former and is easier to read.
+*/
+/**
+* * Element styles
+*/
 * {
   font-family: "Open Sans", sans-serif;
 }
 
+/**
+* * Typography
+*/
 .nav-item, h1,
 h2,
 h3,
@@ -21,7 +31,10 @@ h6 {
 }
 
 /**
-* All pages
+* * All pages
+*/
+/**
+* Nav
 */
 .custom-nav {
   padding-top: 1.5rem;
@@ -59,13 +72,19 @@ h6 {
 }
 
 /**
-* Homepage
+* * Homepage
+*/
+/**
+* Header
 */
 .custom-header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
+/**
+* Posts
+*/
 .posts {
   padding-left: 0;
   margin-bottom: 5rem;

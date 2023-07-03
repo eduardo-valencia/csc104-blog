@@ -1,3 +1,8 @@
+/**
+* If you are viewing the CSS file, please see index.scss because it generated
+* the former and is easier to read.
+*/
+
 //
 // Utilities
 //
@@ -23,16 +28,16 @@ $breakpoints: (
   }
 }
 
-//
-// Element styles
-//
+/**
+* * Element styles
+*/
 * {
   font-family: 'Open Sans', sans-serif;
 }
 
-//
-// Typography
-//
+/**
+* * Typography
+*/
 %heading-font {
   font-family: 'Robot Condensed', sans-serif !important;
 }
@@ -48,10 +53,12 @@ h6 {
 }
 
 /**
-* All pages
+* * All pages
 */
 
-// Nav
+/**
+* Nav
+*/
 .custom-nav {
   $padding-y: 1.5rem;
   padding-top: $padding-y;
@@ -92,16 +99,20 @@ h6 {
 }
 
 /**
-* Homepage
+* * Homepage
 */
 
-// Header
+/**
+* Header
+*/
 .custom-header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
-// Posts
+/**
+* Posts
+*/
 .posts {
   padding-left: 0;
   margin-bottom: 5rem;
