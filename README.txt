@@ -8,7 +8,7 @@ Home (`index.html`):
 
 This page displays recent blog posts. Each blog post has an image and a short description.
 
-Post page (`post-1.html`):
+React (`post-1.html`):
 
 This page displays a post's content. It shows the post's title, author, image, and text.
 
