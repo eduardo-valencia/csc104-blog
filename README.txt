@@ -4,7 +4,7 @@ This is a project for class CSC104.
 
 Pages:
 
-Home (`index.html`):
+Supercoder Blog (Homepage, `index.html`):
 
 This page displays recent blog posts. Each blog post has an image and a short description.
 
