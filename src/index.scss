@@ -298,3 +298,16 @@ h6 {
   display: flex;
   justify-content: flex-end;
 }
+
+.contact-img {
+  margin-bottom: 3rem;
+  width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
+}
+
+.contact-header {
+  @extend .custom-header;
+
+  margin-top: 0;
+}
