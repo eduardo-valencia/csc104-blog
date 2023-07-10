@@ -256,8 +256,16 @@ h6 {
 /**
 * Contact Page
 */
-.contact-form {
+.contact-body {
   margin-bottom: 4.87rem;
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+.contact-header__img {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .contact-field + .contact-field {
@@ -271,12 +279,4 @@ h6 {
   margin-top: 3rem;
   display: flex;
   justify-content: flex-end;
-}
-
-.contact-header {
-  margin-bottom: 3rem;
-}
-.contact-header__img {
-  width: 100%;
-  margin-top: 2rem;
 }
