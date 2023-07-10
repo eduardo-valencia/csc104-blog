@@ -113,6 +113,19 @@ h6 {
 /**
 * Posts
 */
+.home-header {
+  @extend .custom-header;
+  margin-bottom: 4rem;
+
+  &__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.recent-posts-title {
+  margin-bottom: 1rem;
+}
+
 .posts {
   padding-left: 0;
   margin-bottom: 5rem;
